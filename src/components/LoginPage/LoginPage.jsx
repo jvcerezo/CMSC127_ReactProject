@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './LoginPage.css';
+import { CgGoogle } from 'react-icons/cg';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -11,31 +13,31 @@ const LoginPage = () => {
     event.preventDefault();
     // Handle login logic here
   };
-
-  return (
-    <div className="login-page">
-      <div className="login-header">
-        <p>Welcome to Labtica!</p>
-      </div>
-      <div className="login-description">
-        <p>Please log in to access your CBC test results and personalized health recommendations. Our secure platform ensures your privacy and confidentiality.</p>
-      </div>
-      <div className="login-form">
-        <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="Username or Email" value={email} onChange={handleEmailChange} />
-          <div className="form-group">
-            <div className="sign-in-btn-container">
-                <button type="submit" className="sign-in-btn">Sign In</button>
+      return (
+        <div className="login-page">
+          <div className="login-form">
+            <p className="welcome">Welcome to LabTICA!</p>
+            <p className="login-description">Please log in to proceed to your CBC test results and personalized health recommendations. Our secure platform ensures your privacy and confidentiality.</p>
+            <button className="btn-login">
+                  <CgGoogle />Continue with Google
+            </button>
+            <div className="or-wrapper">
+              <hr className="line1" />
+              <p className="or">Or</p>
+              <hr className="line2" />
             </div>
-                <div className="no-account">
-                    <span>Don't have an account yet?</span>
-                    <a href='' className="create-account-link">Create Account</a>
+              <button className="btn-signup">
+              Sign in
+                <div class="arrow-wrapper">
+                  <div class="arrow"></div>
                 </div>
+                </button>
             </div>
-        </form>
-      </div>
-    </div>
-  );
+            <div className="signup-link">
+              <p>Don't have an account yet?</p>
+            </div>
+          </div>
+      );
 };
 
 export default LoginPage;
