@@ -1,1232 +1,417 @@
+.background {
+  background-image: url("./Main-Picture.png");
+  background-size: cover;
+  height: auto;
+  overflow: hidden;
+}
 
-  .background {
-    background-image: url("./Main-Picture.png");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 115px;
+/* Background images */
+.background-1 {
+  background-image: url("./Main-Picture.png");
+}
+
+.background-2 {
+  background-image: url("./11.png");
+}
+
+.background-3 {
+  background-image: url("./12.png");
+}
+
+.infoLabtica {
+  letter-spacing: 0.05em;
+  font-size: 0.9em;
+}
+
+.arrow-button {
+  font-size: 2.5em;
+  color: #425BE1;
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .footer-heading {
+    font-size: 0.8em;
   }
-  
-  .right-button {
-    position: absolute;
-    left: 1360px;
-    top: 355px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 40px;
-    color: #425BE1;
-    cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .headersize {
+    font-size: 1em;
   }
-  
-  .left-button {
-    position: absolute;
-    left: 40px;
-    top: 355px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 40px;
-    color: #425BE1;
-    cursor: pointer;
+
+  .textsize {
+    font-size: 0.6em;
   }
-  
-  /* Background images */
-  .background-1 {
-    background-image: url("./Main-Picture.png");
-    transition: background-image 0.5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .footer-heading {
+    font-size: 1em;
   }
-  .background-2 {
-    background-image: url("./11.png");
-    transition: background-image 0.5s ease-out;
+}
+
+@media (min-width: 992px) {
+  .footer-heading {
+    font-size: 1.25em;
   }
-  .background-3 {
-    background-image: url("./12.png");
-    transition: background-image 0.5s ease-out;
-  }
-  
-  .slideshow {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  .left-arrow,
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  .left-arrow {
-    left: 2rem;
-  }
-  .right-arrow {
-    right: 2rem;
-  }
-  
-  .reliable{
-    position: absolute;
-    left: 320px;
-    top: 650px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 20px;
-    color: #0D0808;
-  }
-  .fast{
-    position: absolute;
-    left: 540px;
-    top: 650px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 20px;
-    color: #0D0808;
-  }
-  
-  .accurate{
-    position: absolute;
-    left: 750px;
-    top: 650px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 20px;
-    color: #0D0808;
-  }
-  
-  .personalize{
-    position: absolute;
-    left: 990px;
-    top: 650px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 20px;
-    color: #0D0808;
-  }
-  
-  .check1 {
-    position: absolute;
-    left: 290px;
-    top: 672px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 20px;
-    color: #5E5E61;
-  }
-  .check2 {
-    position: absolute;
-    left: 510px;
-    top: 672px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 20px;
-    color: #5E5E61;
-  }
-  .check3 {
-    position: absolute;
-    left: 720px;
-    top: 672px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 20px;
-    color: #5E5E61;
-  }
-  .check4 {
-    position: absolute;
-    left: 960px;
-    top: 672px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 20px;
-    color: #5E5E61;
-  }
-  
-  .info {
-    position: absolute;
-    top: 143px;
-    left: 152px;
-    width: 421px;
-    height: 208px;
-    font-family: Inter;
-    font-style: Medium;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 3.5%;
-    text-align: left;
-    vertical-align: top;
-    color: #FFF8F8;
-    padding: 0 20px;
-  }
-  
-  .title {
-    font-family: Kaisei Decol;
-    font-style: bold;
-    font-size: 36px;
-    line-height: 43px;
-    line-height: 119%;
-    color: #FFFFFF;
-  }
-  
-  .description {
-    margin-top: 27px;
-    line-height: 117.77%;
-  }
-  
-  .button {
-    position: absolute;
-    top: 584px;
-    left: 153px;
-    width: 156px;
-    height: 54px;
-    border-radius: 82px;
-    background-color: #425BE1;
-    }
-    
-    .button-text {
-    position: absolute;
-    top: 598px;
-    left: 181px;
-    width: 421px;
-    height: 26px;
-    font-family: Inter;
-    font-style: Medium;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: -2%;
-    text-align: left;
-    vertical-align: top;
-    color: #FFF8F8;
-    padding: 0;
-    margin: 0;
-    line-height: 117.77%;
-    }
-  
-    .start-button {
-      position: absolute;
-      top: 330px;
-      left: 19px;
-      width: 170px;
-      height: 45px;
-      border-radius: 82px;
-      background-color: #425BE1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      }
-      
-      .start-text {
-      font-family: Inter;
-      font-style: Medium;
-      font-size: 18px;
-      line-height: 26px;
-      letter-spacing: -2%;
-      text-align: left;
-      vertical-align: top;
-      line-height: 117.77%;
-      margin: 0;
-      padding: 0 27px;
-      color: #FFF8F8;
-      }
-  
-      .footer {
-        position: absolute;
-        left: 6px;
-        top: 480px;
-        width: 1110px;
-        height: 115px;
-        border-radius: 82px;
-        background-color: #E7F1FC;
-      }
-      
-      .learn-about-cbc {
-        position: absolute;
-        left: 639px;
-        top: 800px;
-        width: 241px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .red-blood-cell{
-        position: absolute;
-        top: 110px;
-        right: 174px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .red-blood-cell-info {
-        position: absolute;
-        top: 160px;
-        right: 200px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .red-blood-cell-pic {
-        position: absolute;
-        top: 85px;
-        right: 540px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./1.png');
-        background-size: cover;
-        background-position: center center;
-      }
-      
-      .red-blood-cell-pic:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 10px #0a0909;
-      }
-  
-      .hemoglobin-level{
-        position: absolute;
-        top: 460px;
-        right: 174px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .hemoglobin-level-info {
-        position: absolute;
-        top: 520px;
-        right: 200px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-  
-      .hemoglobin-level-pic {
-        position: absolute;
-        top: 418px;
-        right: 540px;
-        width: 215px;
-        height: 287px;
-        border-radius: 13px;
-        background-image: url('./3.png');
-        background-size: cover;
-        background-position: center center;
-        z-index: 999; 
-      }
-      
-      .hemoglobin-level-pic:hover {
-        transform: scale(1.05);
-        z-index: 1000; 
-        box-shadow: 0 0 10px #0a0909;
-      }
-      
-  
-      .white-blood-cell{
-        position: absolute;
-        top: 110px;
-        left: 340px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .white-blood-cell-info {
-        position: absolute;
-        top: 160px;
-        left: 340px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-  
-      .white-blood-cell-pic{
-        position: absolute;
-        top: 85px;
-        left: 95px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./2.png');
-        background-size: cover;
-        background-position: center center;
-      }
-  
-      .white-blood-cell-pic:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 10px #0a0909;
-      }
-  
-      .hematocrit-level{
-        position: absolute;
-        top: 460px;
-        left: 340px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .hematocrit-level-info {
-        position: absolute;
-        top: 520px;
-        left: 340px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .hematocrit-level-pic {
-        position: absolute;
-        top: 418px;
-        left: 95px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./4.png');
-        background-size: cover;
-        background-position: center center;
-      }
-  
-      .hematocrit-level-pic:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 10px #0a0909;
-      }
-  
-      .platelet-count{
-        position: absolute;
-        top: 780px;
-        right: 174px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .platelet-count-info {
-        position: absolute;
-        top: 840px;
-        right: 200px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .platelet-count-pic {
-        position: absolute;
-        top: 745px;
-        right: 540px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./5.png');
-        background-size: cover;
-        background-position: center center;
-      }
-  
-      .platelet-count-pic:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 10px #0a0909;
-      }
-  
-      .mch-concentration{
-        position: absolute;
-        top: 750px;
-        left: 340px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .mch-info {
-        position: absolute;
-        top: 870px;
-        left: 340px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .mch-concentration-pic {
-        position: absolute;
-        top: 745px;
-        left: 95px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./6.png');
-        background-size: cover;
-        background-position: center center;
-        z-index: 999; 
-      }
-      .mch-concentration-pic:hover {
-        transform: scale(1.05);
-        z-index: 1000; 
-        box-shadow: 0 0 10px #0a0909;
-      }
-  
-      .mean-corpuscular-volume{
-        position: absolute;
-        top: 1100px;
-        right: 174px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .mean-corpuscular-volume-info {
-        position: absolute;
-        top: 1190px;
-        right: 200px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .mean-corpuscular-volume-pic {
-        position: absolute;
-        top: 1075px;
-        right: 540px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./7.png');
-        background-size: cover;
-        background-position: center center;
-        transition: transform 0.2s ease-in-out;
-      }
-      
-      .mean-corpuscular-volume-pic:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 10px #0a0909;
-      }
-      
-      .mean-corpuscular-hemoglobin{
-        position: absolute;
-        top: 1100px;
-        left: 340px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .mean-corpuscular-hemoglobin-info {
-        position: absolute;
-        top: 1190px;
-        left: 340px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .mean-corpuscular-hemoglobin-pic {
-        position: absolute;
-        top: 1078px;
-        left: 95px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./8.png');
-        background-size: cover;
-        background-position: center center;
-        z-index: 999; 
-      }
-      .mean-corpuscular-hemoglobin-pic:hover {
-        transform: scale(1.05);
-        z-index: 1000; 
-        box-shadow: 0 0 10px #0a0909;
-      }
-  
-      .DWBCC{
-        position: absolute;
-        top: 1425px;
-        right: 174px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .DWBCC-info {
-        position: absolute;
-        top: 1515px;
-        right: 200px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .DWBCC-pic {
-        position: absolute;
-        top: 1405px;
-        right: 540px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./9.png');
-        background-size: cover;
-        background-position: center center;
-        transition: transform 0.2s ease-in-out;
-      }
-      
-      .DWBCC-pic:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 10px #0a0909;
-      }
-  
-      .Red-BCDW{
-        position: absolute;
-        top: 1420px;
-        left: 340px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      
-      .Red-BCDW-info {
-        position: absolute;
-        top: 1510px;
-        left: 340px;
-        width: 315px;
-        height: 68px;
-        font-family: Inter;
-        font-style: medium;
-        font-size: 18px;
-        line-height: 26px;
-        line-height: 117.77%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-      
-      .Red-BCDW-pic {
-        position: absolute;
-        top: 1405px;
-        left: 95px;
-        width: 215px;
-        height: 287px;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        border-bottom-left-radius: 13px;
-        background-image: url('./10.png');
-        background-size: cover;
-        background-position: center center;
-        z-index: 999; 
-      }
-      
-      .Red-BCDW-pic:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 10px #0a0909;
-      }
-      
-      
-      .about-cbc {
-        position: absolute;
-        left: 632px;
-        top: 760px;
-        width: 341px;
-        height: 68px;
-        font-family: Inter;
-        font-style: bold;
-        font-size: 20px;
-        line-height: 46px;
-        line-height: 143%;
-        text-align: left;
-        vertical-align: top;
-        letter-spacing: 3.5%;
-        padding-bottom: 27px;
-        color: #0D0808;
-      }
-  
-      .new-element {
-        position: absolute;
-        top: 70px;
-        right: 170px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(22, 19, 137, 0.15);
-      }
-      
-      .new-element2 {
-        position: absolute;
-        top: 70px;
-        left: 80px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(158, 9, 76, 0.15);
-      }
-      .new-element3 {
-        position: absolute;
-        top: 400px;
-        right: 170px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(158, 9, 76, 0.15);
-      }
-  
-      .new-element4 {
-        position: absolute;
-        top: 400px;
-        left: 80px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(22, 19, 137, 0.15);
-      }
-      
-      .new-element5 {
-        position: absolute;
-        top: 730px;
-        right: 170px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(22, 19, 137, 0.15);
-      }
-  
-      .new-element6 {
-        position: absolute;
-        top: 730px;
-        left: 80px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(158, 9, 76, 0.15);
-      }
-      
-      .new-element7 {
-        position: absolute;
-        top: 1060px;
-        right: 170px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(158, 9, 76, 0.15);
-      }
-      
-      .new-element8 {
-        position: absolute;
-        top: 1060px;
-        left: 80px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(22, 19, 137, 0.15);
-      }
-  
-      .new-element9 {
-        position: absolute;
-        top: 1390px;
-        right: 170px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(22, 19, 137, 0.15);
-      }
-  
-      .new-element10 {
-        position: absolute;
-        top: 1390px;
-        left: 80px;
-        width: 600px;
-        height: 318px;
-        border-radius: 25px;
-        background-color: rgba(158, 9, 76, 0.15);
-      }
-  
-      .footer2 {
-        position: absolute;
-        left: -730px;
-        right: 174px;
-        top: 1800px;
-        width: 1514px;
-        height: 921px;
-        background-color: #E7F1FC;
-        border-radius: 0px;
-        text-align: center;
-      }
-  
-      .footer2-info {
-        position: absolute;
-        font-family: Inter;
-        font-size: 26px;
-        right: 250px;
-        top: 1900px;
-        width: 500px;
-        height: 90px;
-        line-height: 170%;
-        border-radius: 82px;
-        color: #0E0606;
-      }
-      .message-container {
-        position: absolute;
-        left: 198px;
-        top: 1945px;
-        width: 493px;
-        height: 70px;
-        border-radius: 9px;
-        background-color: #FFFFFF;
-      }
-      
-      .message-input {
-        position: absolute;
-        left: 10px;
-        top: 12px;
-        width: 350px;
-        height: 30px;
-        border: none;
-        font-size: 16px;
-        padding: 10px;
-      }
-      
-      .send-button {
-        position: absolute;
-        right: 10px;
-        top: 8px;
-        width: 144px;
-        height: 56px;
-        border: none;
-        border-radius: 9px;
-        background-color: #171313;
-        color: #FFFFFF;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
-      }
-      
-      .send-button:hover {
-        background-color: #231f1f;
-      }
-      
-      .send-button:active {
-        background-color: #0d0b0b;
-        box-shadow: 0 0 5px #888;
-      }
-  
-      .footer2-1-info{
-        position: absolute;
-        font-family: Inter;
-        font-size: 18px;
-        line-height: 150%;
-        letter-spacing: 3.5%; 
-        color: #4F4747;
-        width: 655px;
-        height: 340px;
-        left: -507px;
-        right: 174px;
-        top: 2050px;
-        text-align: left;
-        vertical-align: top;
-        
-      }
-      
-      .footer3 {
-        position: absolute;
-        left: -730px;
-        right: 174px;
-        top: 2700px;
-        width: 1514px;
-        height: 87px;
-        background-color: #ffffff;
-        text-align: center;
-      }
-      .footer3-info {
-      position: absolute;
-      font-family: Inter;
-      font-size: 16px;
-      line-height: 400%;
-      fill: solid;
-      width: 1000px;
-      height: 90px;
-      top: 2700px;
-      color: #000000;
-      left: -70px;
-    }
-    .language {
-      position: absolute;
-      left: -505px;
-      top: 2390px;
-      font-family: Inter;
-      font-style: bold;
-      font-size: 24px;
-      line-height: 29px;
-      letter-spacing: 1.5%;
-      color: #0E0606;
-    }
-  
-    .language-button {
-    position: absolute;
-    left: -505px;
-    top: 2479px;
-    width: 119px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: #CFDFF4;
-    color: #000000;
-    font-family: Inter;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-  }
-  
-  .language-button:hover {
-    cursor: pointer;
-  }
-  
-  .language-button svg {
-    margin-left: 10px;
-  }
-  
-  .contact-us{
-    position: absolute;
-    right: -110px;
-    top: 2040px;
-    font-family: Inter;
-    font-style: bold;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 1.5%;
-    color: #0E0606;
-  }
-  
-  .contact-info {
-    position: absolute;
-    right: -410px;
-    top: 2100px;
-    width: 450px;
-    height: 173px;
-    font-family: Inter;
-    font-style: medium;
-    font-size: 17px;
-    letter-spacing: 3.5%;
-    color: #4F4747;
-    fill: solid;
-  }
-  
-  .socials{
-    position: absolute;
-    right: -58px;
-    top: 2390px;
-    font-family: Inter;
-    font-style: bold;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 1.5%;
-    color: #0E0606;
-  }
-  
-  .socials-info {
-    font-family: Inter;
-    position: absolute;
-    right: -275px;
-    top: 2450px;
-    font-size: 18px;
-    font-family: Inter;
-    font-style: Medium;
-    line-height: 29px;
-    letter-spacing: 1.5%;
-    color: #0E0606;
-  }
-  
-  .facebook{
-    position: absolute;
-    left: 200px;
-    top: 2468px;;
-    width: 241px;
-    font-family: Inter;
-    font-size: 25px;
-    color: #09090a;
-  }
-  
-  .twitter{
-    position: absolute;
-    left: 200px;
-    top: 2495px;;
-    width: 241px;
-    font-family: Inter;
-    font-size: 25px;
-    color: #09090a;
-  }
-  
-  .instagram{
-    position: absolute;
-    left: 200px;
-    top: 2528px;
-    width: 241px;
-    font-family: Inter;
-    font-size: 25px;
-    color: #09090a;
-  }
-  
-  .linkedin{
-    position: absolute;
-    left: 200px;
-    top: 2560px;;
-    width: 241px;
-    font-family: Inter;
-    font-size: 25px;
-    color: #09090a;
-  }
-  
-  .language-dropdown {
-    position: absolute;
-    left: -500px;
-    top: 2470px;
-    width: 100px;
-    height: 48px;
-    border-radius: 08px;
-    font-family: Inter;
-    font-size: 40px;
-    color: #425BE1;
-    background-color: #CFDFF4;
-   
-  }
-  
-  /* hide the default dropdown arrow */
-  .language-dropdown select {
-    right: -505px;
-    top: 2470px;
-    width: 119px;
-    height: 48px;
-    border-radius: 8px;
-    appearance: 100px;
-    background-size: 1000px;
-    color: #060609;
-    background-color: #CFDFF4;
-    border: none;
-  }
-  
-  /* style the selected option */
-  .language-dropdown option:checked {
-    left: -505px;
-    top: 2470px;
-    width: 119px;
-    background-color: #425BE1;
-    color: #fff;
-    
-  }
-  
+}
+
+.check,
+.about-cbc {
+  font-size: 1.25em;
+}
+
+.info,
+.cbc-texts {
+  font-size: 1.125em;
+}
+
+.footer-margin {
+  margin-top: 3.5em;
+  margin-bottom: -4em;
+}
+
+.footer-bottom {
+  margin-top: -5em;
+}
+
+.footer-heading,
+.info,
+.start-button,
+.about-cbc {
+  font-family: Inter;
+}
+
+.check {
+  color: #5E5E61;
+}
+
+.info {
+  color: #FFF8F8;
+  margin-top: 7em;
+}
+
+.title {
+  font-family: Kaisei Decol;
+  font-style: bold;
+  font-size: 2.25em;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.start-button {
+  width: 9.5em;
+  height: 3em;
+  border-radius: 5em;
+  background-color: #425BE1;
+  align-items: center;
+}
+
+.start-text {
+  font-size: 1em;
+  margin: auto;
+  color: #FFF8F8;
+}
+
+.footer {
+  height: 7.1875em;
+  border-radius: 5.125em;
+  background-color: #E7F1FC;
+}
+
+.cbc-texts {
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+.red-blood-cell-pic {
+  border-radius: 13px;
+}
+
+.white-blood-cell-pic {
+  background-image: url('./2.png');
+}
+
+.hemoglobin-level-pic {
+  background-image: url('./3.png');
+}
+
+.hematocrit-level-pic {
+  background-image: url('./4.png');
+}
+
+.platelet-count-pic {
+  background-image: url('./5.png');
+  background-position: center center;
+}
+
+.mch-concentration-pic {
+  background-image: url('./6.png');
+}
+
+.mean-corpuscular-volume-pic {
+  background-image: url('./7.png');
+}
+
+.mean-corpuscular-hemoglobin-pic {
+  background-image: url('./8.png');
+}
+
+.DWBCC-pic {
+  background-image: url('./9.png');
+}
+
+.Red-BCDW-pic {
+  background-image: url('./10.png');
+}
+
+.red-blood-cell-pic:hover,
+.hemoglobin-level-pic:hover,
+.white-blood-cell-pic:hover,
+.hematocrit-level-pic:hover,
+.platelet-count-pic:hover,
+.mch-concentration-pic:hover,
+.mean-corpuscular-hemoglobin-pic:hover,
+.DWBCC-pic:hover,
+.Red-BCDW-pic:hover,
+.mean-corpuscular-volume-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #0a0909;
+}
+
+
+.white-blood-cell-pic,
+.hemoglobin-level-pic,
+.hematocrit-level-pic,
+.mch-concentration-pic,
+.platelet-count-pic,
+.mean-corpuscular-volume-pic,
+.mean-corpuscular-hemoglobin-pic,
+.DWBCC-pic,
+.Red-BCDW-pic {
+  height: 15em;
+  border-radius: 13px;
+  background-size: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.about-cbc {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.new-element {
+  border-radius: 25px;
+  background-color: rgba(22, 19, 137, 0.15);
+}
+
+.new-element2 {
+  border-radius: 25px;
+  background-color: rgba(158, 9, 76, 0.15);
+}
+
+.footer2 {
+  background-color: #E7F1FC;
+  text-align: center;
+}
+
+.message-container {
+  width: 400px;
+  height: 70px;
+  border-radius: 9px;
+  background-color: #FFFFFF;
+}
+
+.message-input {
+  width: 350px;
+  height: 30px;
+  border: none;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.send-button {
+  width: 144px;
+  height: 56px;
+  border: none;
+  border-radius: 9px;
+  background-color: #171313;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.send-button:hover {
+  background-color: #231f1f;
+}
+
+.send-button:active {
+  background-color: #0d0b0b;
+  box-shadow: 0 0 5px #888;
+}
+
+.footer2-1-info {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 3.5%;
+  color: #4F4747;
+  width: 400px;
+  height: 340px;
+  left: -507px;
+  right: 174px;
+  top: 2050px;
+  text-align: left;
+  vertical-align: top;
+
+}
+
+.footer3 {
+  width: 400px;
+  height: 87px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.footer3-info {
+  font-family: Inter;
+  font-size: 1em;
+  line-height: 400%;
+  fill: solid;
+  width: 400px;
+  height: 90px;
+  top: 2700px;
+  color: #000000;
+  left: -70px;
+}
+
+.language {
+  font-family: Inter;
+  font-style: bold;
+  font-size: 24px;
+  letter-spacing: 1.5%;
+  color: #0E0606;
+}
+
+.language-button {
+  width: 119px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #CFDFF4;
+  color: #000000;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.language-button:hover {
+  cursor: pointer;
+}
+
+.language-button svg {
+  margin-left: 10px;
+}
+
+.contact-us {
+  font-family: Inter;
+  font-style: bold;
+  font-size: 24px;
+  letter-spacing: 1.5%;
+  color: #0E0606;
+}
+
+.contact-info {
+  width: 400px;
+  height: 173px;
+  font-family: Inter;
+  font-style: medium;
+  font-size: 17px;
+  letter-spacing: 3.5%;
+  color: #4F4747;
+  fill: solid;
+}
+
+.socials {
+  font-family: Inter;
+  font-style: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1.5%;
+  color: #0E0606;
+}
+
+.socials-info {
+  font-family: Inter;
+  font-size: 1.125em;
+  font-family: Inter;
+  font-style: Medium;
+  letter-spacing: 1.5%;
+  color: #0E0606;
+}
+
+.facebook {
+  width: 241px;
+  font-family: Inter;
+  font-size: 25px;
+  color: #09090a;
+}
+
+.twitter {
+  width: 241px;
+  font-family: Inter;
+  font-size: 25px;
+  color: #09090a;
+}
+
+.instagram {
+  width: 241px;
+  font-family: Inter;
+  font-size: 25px;
+  color: #09090a;
+}
+
+.linkedin {
+  width: 241px;
+  font-family: Inter;
+  font-size: 25px;
+  color: #09090a;
+}
+
+.language-dropdown {
+  width: 100px;
+  height: 48px;
+  border-radius: 08px;
+  font-family: Inter;
+  font-size: 40px;
+  color: #425BE1;
+  background-color: #CFDFF4;
+
+}
+
+/* hide the default dropdown arrow */
+.language-dropdown select {
+  width: 119px;
+  height: 48px;
+  border-radius: 8px;
+  appearance: 100px;
+  background-size: 1000px;
+  color: #060609;
+  background-color: #CFDFF4;
+  border: none;
+}
+
+/* style the selected option */
+.language-dropdown option:checked {
+  width: 119px;
+  background-color: #425BE1;
+  color: #fff;
+
+}

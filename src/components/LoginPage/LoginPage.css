@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-.container-fluid {
+.login-background {
   background-image: url("./loginbg.png");
   background-size: cover;
   height: 92vh;

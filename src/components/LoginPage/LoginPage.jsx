@@ -16,7 +16,7 @@ const LoginPage = () => {
     // Handle login logic here
   };
   return (
-    <div className="container-fluid">
+    <div className="container-fluid login-background">
       <p className="welcome">Welcome to LabTICA!</p>
       <p className="login-description">Please log in to proceed to your CBC test results and personalized health</p>
       <p className="login-description">recommendations. Our secure platform ensures your privacy and confidentiality.</p>

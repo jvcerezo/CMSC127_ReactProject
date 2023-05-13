@@ -31,7 +31,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid sign-in-background">
       <div className="container mb-2">
         <div className="row ms-5">
           <div className="col-12">
