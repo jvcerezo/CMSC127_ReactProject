@@ -16,40 +16,40 @@ const LoginPage = () => {
     // Handle login logic here
   };
   return (
-    <div class="container-fluid">
-      <p class="welcome">Welcome to LabTICA!</p>
-      <p class="login-description">Please log in to proceed to your CBC test results and personalized health</p>
-      <p class="login-description">recommendations. Our secure platform ensures your privacy and confidentiality.</p>
+    <div className="container-fluid">
+      <p className="welcome">Welcome to LabTICA!</p>
+      <p className="login-description">Please log in to proceed to your CBC test results and personalized health</p>
+      <p className="login-description">recommendations. Our secure platform ensures your privacy and confidentiality.</p>
 
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <button class="btn-login border border-0 rounded-5">
+      <div className="row">
+        <div className="col d-flex justify-content-center">
+          <button className="btn-login border border-0 rounded-5">
             <CgGoogle />Continue with Google</button>
         </div>
       </div>
 
-      <div class="row mt-4"></div>
-      <div class="col d-flex justify-content-center">
-        <hr class="line1 border border-1 opacity-100" />
-        <p class="or mx-3">Or</p>
-        <hr class="line1 border border-1 opacity-100" />
+      <div className="row mt-4"></div>
+      <div className="col d-flex justify-content-center">
+        <hr className="line1 border border-1 opacity-100" />
+        <p className="or mx-3">Or</p>
+        <hr className="line1 border border-1 opacity-100" />
       </div>
 
 
-      <div class="row mt-2">
-        <div class="col d-flex justify-content-center">
-          <button class="btn-signup border border-0 rounded-5" onClick={() => {
+      <div className="row mt-2">
+        <div className="col d-flex justify-content-center">
+          <button className="btn-signup border border-0 rounded-5" onClick={() => {
             navigate('/signin');
           }}>
             Sign Up
-            <div class="arrow-wrapper">
-              <div class="arrow"></div>
+            <div className="arrow-wrapper">
+              <div className="arrow"></div>
             </div>
           </button>
         </div>
       </div>
 
-      <div class="signup-link mt-4">
+      <div className="signup-link mt-4">
         <p>Don't have an account yet?</p>
       </div>
 
