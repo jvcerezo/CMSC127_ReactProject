@@ -29,33 +29,6 @@
   cursor: pointer;
 }
 
-@media (max-width: 767.98px) {
-  .footer-heading {
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .headersize {
-    font-size: 1em;
-  }
-
-  .textsize {
-    font-size: 0.6em;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer-heading {
-    font-size: 1em;
-  }
-}
-
-@media (min-width: 992px) {
-  .footer-heading {
-    font-size: 1.25em;
-  }
-}
 
 .check,
 .about-cbc {
@@ -63,7 +36,9 @@
 }
 
 .info,
-.cbc-texts {
+.cbc-texts,
+.footer2-1-info,
+.socials-info {
   font-size: 1.125em;
 }
 
@@ -79,7 +54,17 @@
 .footer-heading,
 .info,
 .start-button,
-.about-cbc {
+.about-cbc,
+.technological,
+.footer2-1-info,
+.contact-us,
+.contact-info,
+.language,
+.language-button,
+.language-dropdown,
+.footer3-info,
+.socials-info,
+.socials {
   font-family: Inter;
 }
 
@@ -125,74 +110,19 @@
   text-align: justify;
 }
 
-.red-blood-cell-pic {
-  border-radius: 13px;
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.white-blood-cell-pic {
-  background-image: url('./2.png');
-}
-
-.hemoglobin-level-pic {
-  background-image: url('./3.png');
-}
-
-.hematocrit-level-pic {
-  background-image: url('./4.png');
-}
-
-.platelet-count-pic {
-  background-image: url('./5.png');
-  background-position: center center;
-}
-
-.mch-concentration-pic {
-  background-image: url('./6.png');
-}
-
-.mean-corpuscular-volume-pic {
-  background-image: url('./7.png');
-}
-
-.mean-corpuscular-hemoglobin-pic {
-  background-image: url('./8.png');
-}
-
-.DWBCC-pic {
-  background-image: url('./9.png');
-}
-
-.Red-BCDW-pic {
-  background-image: url('./10.png');
-}
-
-.red-blood-cell-pic:hover,
-.hemoglobin-level-pic:hover,
-.white-blood-cell-pic:hover,
-.hematocrit-level-pic:hover,
-.platelet-count-pic:hover,
-.mch-concentration-pic:hover,
-.mean-corpuscular-hemoglobin-pic:hover,
-.DWBCC-pic:hover,
-.Red-BCDW-pic:hover,
-.mean-corpuscular-volume-pic:hover {
+.manypics:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px #0a0909;
 }
 
 
-.white-blood-cell-pic,
-.hemoglobin-level-pic,
-.hematocrit-level-pic,
-.mch-concentration-pic,
-.platelet-count-pic,
-.mean-corpuscular-volume-pic,
-.mean-corpuscular-hemoglobin-pic,
-.DWBCC-pic,
-.Red-BCDW-pic {
-  height: 15em;
-  border-radius: 13px;
-  background-size: cover;
+.manypics {
   transition: transform 0.2s ease-in-out;
 }
 
@@ -215,32 +145,43 @@
 .footer2 {
   background-color: #E7F1FC;
   text-align: center;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 3em;
+}
+
+.footer-firstelem {
+  margin-top: 9em;
+}
+
+.technological {
+  font-weight: 600;
+  text-align: left;
 }
 
 .message-container {
-  width: 400px;
-  height: 70px;
+  width: 25em;
+  height: 4.375em;
   border-radius: 9px;
   background-color: #FFFFFF;
 }
 
 .message-input {
-  width: 350px;
-  height: 30px;
+  width: 13em;
+  height: 1.875em;
   border: none;
   font-size: 1em;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 .send-button {
-  width: 144px;
-  height: 56px;
+  width: 9em;
+  height: 3.5em;
   border: none;
   border-radius: 9px;
   background-color: #171313;
   color: #FFFFFF;
   font-size: 1em;
-  cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -254,164 +195,115 @@
 }
 
 .footer2-1-info {
-  font-family: Inter;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 3.5%;
   color: #4F4747;
-  width: 400px;
-  height: 340px;
-  left: -507px;
-  right: 174px;
-  top: 2050px;
-  text-align: left;
-  vertical-align: top;
+  text-align: justify;
 
 }
 
-.footer3 {
-  width: 400px;
-  height: 87px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.footer3-info {
-  font-family: Inter;
-  font-size: 1em;
-  line-height: 400%;
-  fill: solid;
-  width: 400px;
-  height: 90px;
-  top: 2700px;
-  color: #000000;
-  left: -70px;
-}
-
-.language {
-  font-family: Inter;
-  font-style: bold;
-  font-size: 24px;
-  letter-spacing: 1.5%;
-  color: #0E0606;
-}
-
-.language-button {
-  width: 119px;
-  height: 48px;
-  border-radius: 8px;
-  background-color: #CFDFF4;
-  color: #000000;
-  font-family: Inter;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-}
-
-.language-button:hover {
-  cursor: pointer;
-}
-
-.language-button svg {
-  margin-left: 10px;
+.footer2-1-info p {
+  margin-bottom: 1.5em;
 }
 
 .contact-us {
-  font-family: Inter;
   font-style: bold;
-  font-size: 24px;
+  font-size: 1.5em;
   letter-spacing: 1.5%;
   color: #0E0606;
+  text-align: left;
 }
 
 .contact-info {
-  width: 400px;
-  height: 173px;
-  font-family: Inter;
-  font-style: medium;
-  font-size: 17px;
-  letter-spacing: 3.5%;
+  text-align: left;
+  font-size: 1.1em;
   color: #4F4747;
-  fill: solid;
 }
 
-.socials {
-  font-family: Inter;
-  font-style: bold;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 1.5%;
+.contact-info p {
+  margin-bottom: 0em;
+}
+
+.contact-info-lastline {
+  margin-top: 2em;
+  text-align: justify;
+}
+
+.language {
+  font-weight: bold;
+  font-size: 1.5em;
   color: #0E0606;
 }
 
-.socials-info {
-  font-family: Inter;
-  font-size: 1.125em;
-  font-family: Inter;
-  font-style: Medium;
-  letter-spacing: 1.5%;
-  color: #0E0606;
-}
-
-.facebook {
-  width: 241px;
-  font-family: Inter;
-  font-size: 25px;
-  color: #09090a;
-}
-
-.twitter {
-  width: 241px;
-  font-family: Inter;
-  font-size: 25px;
-  color: #09090a;
-}
-
-.instagram {
-  width: 241px;
-  font-family: Inter;
-  font-size: 25px;
-  color: #09090a;
-}
-
-.linkedin {
-  width: 241px;
-  font-family: Inter;
-  font-size: 25px;
-  color: #09090a;
+.invisible {
+  color: #E7F1FC;
 }
 
 .language-dropdown {
-  width: 100px;
-  height: 48px;
-  border-radius: 08px;
-  font-family: Inter;
-  font-size: 40px;
-  color: #425BE1;
-  background-color: #CFDFF4;
-
-}
-
-/* hide the default dropdown arrow */
-.language-dropdown select {
-  width: 119px;
-  height: 48px;
+  width: 7em;
+  height: 3em;
+  border: 0;
   border-radius: 8px;
-  appearance: 100px;
-  background-size: 1000px;
-  color: #060609;
-  background-color: #CFDFF4;
-  border: none;
+  font-size: 2.5em;
+  background-color: rgb(207, 223, 236);
 }
 
-/* style the selected option */
-.language-dropdown option:checked {
-  width: 119px;
-  background-color: #425BE1;
-  color: #fff;
+.language-dropdown:hover {
+  cursor: pointer;
+}
 
+.socials {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.social-logos {
+  font-size: 1.5625em;
+}
+
+.footer3-info {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+
+@media (max-width: 767.98px) {
+  .footer-heading {
+    font-size: 0.8em;
+  }
+
+  .socialtext {
+    font-size: 0.8em;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+
+  .technological {
+    font-size: 3em;
+  }
+
+  .image-container {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .center-images {
+    justify-content: center;
+  }
+
+  .cbc-texts {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-heading {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-heading {
+    font-size: 1.25em;
+  }
 }
