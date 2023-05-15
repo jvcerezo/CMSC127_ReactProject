@@ -1,46 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-.login-page{
-  background-size: cover;
-  background-position: center;
+.login-background {
   background-image: url("./loginbg.png");
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  height: 92vh;
+  overflow: hidden;
 }
 
-.welcome{
+.welcome,
+.login-description,
+.or,
+.signup-link {
   font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.welcome {
   font-weight: 700;
-  font-style: normal;
-  font-size: 64px;
-  line-height: 84px;
-  color: #FFFFFF;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -325%);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 4em;
+  margin-top: 2em;
 }
 
-.login-description{
-  font-family: 'Inter', sans-serif;
+.login-description,
+.or {
   font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 36px;
-  color: #FFFFFF;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -180%);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.125em;
 }
 
-.btn-signup{
+.btn-signup {
   font-family: 'Inter', sans-serif;
   width: 235px;
   height: 40px;
@@ -49,9 +39,6 @@
   --hover-color: #111111;
   --arrow-width: 10px;
   --arrow-stroke: 2px;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 20px;
   color: var(--secondary-color);
   padding: 1em 1.8em;
   background: var(--primary-color);
@@ -61,19 +48,23 @@
   gap: 0.6em;
   font-weight: bold;
   justify-content: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 300%);
-  position: absolute;
 }
 
-.btn-signup .arrow-wrapper{
+.btn-login {
+  font-family: 'Inter', sans-serif;
+  background-color: #EEEEEE;
+  width: 235px;
+  height: 43px;
+  margin-top: 3em;
+}
+
+.btn-signup .arrow-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btn-signup .arrow{
+.btn-signup .arrow {
   margin-top: 1px;
   width: var(--arrow-width);
   height: var(--arrow-stroke);
@@ -81,7 +72,7 @@
   transition: 0.2s background;
 }
 
-.btn-signup .arrow::before{
+.btn-signup .arrow::before {
   content: "";
   position: absolute;
   box-sizing: border-box;
@@ -95,105 +86,37 @@
   transform: rotate(-45deg);
 }
 
-.btn-signup:hover{
+.btn-signup:hover {
   background: var(--hover-color);
 }
 
-.btn-signup:hover .arrow{
+.btn-signup:hover .arrow {
   background: var(--secondary-color);
 }
 
-.btn-signup:hover .arrow:before{
+.btn-signup:hover .arrow:before {
   right: 0;
 }
 
-.btn-login{
-  font-family: 'Inter', sans-serif;
-  background-color: #EEEEEE;
-  border: none;
-  font-size: 15px;
-  border-radius: 24px;
-  line-height: 22px;
-  align-items: center;
-  cursor: pointer;
-  width: 235px;
-  height: 43px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 40%);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-}
-.btn-login svg{
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
+.btn-login svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.2em;
 }
 
-.btn-login:hover:not(:disabled){
+.btn-login:hover:not(:disabled) {
   background-color: #000000;
   color: white;
 }
 
-.btn-login:disabled{
-  cursor: auto;
-  color: black;
-}
-
-.line1{
-  position: absolute;
+.line1 {
   width: 90px;
   height: 0px;
-  border: 1px solid #FFFFFF;
-  transform: rotate(-0.57deg);
-  top: 61%;
-  left: 45.5%;
-  transform: translate(-50%, 300%);
-  position: absolute;
+  border: solid #FFFFFF;
 }
 
-.line2{
-  position: absolute;
-  width: 90px;
-  height: 0px;
-  border: 1px solid #FFFFFF;
-  transform: rotate(-0.57deg);
-  top: 61%;
-  left: 54.5%;
-  transform: translate(-50%, 300%);
-  position: absolute;
-}
-
-.or{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 36px;
-    color: #FFFFFF;
-    text-align: center;
-    position: absolute;
-    width: 90px;
-    height: 0px;
-    transform: rotate(-0.57deg);
-    top: 57.8%;
-    left: 50%;
-    transform: translate(-50%, 300%);
-    position: absolute;
-}
-
-.signup-link{
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 22px;
-  color: #FFFFFF;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 300%);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.signup-link,
+.btn-login {
+  font-size: 0.9375em;
 }

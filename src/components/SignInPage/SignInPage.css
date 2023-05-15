@@ -1,277 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-.sign-in-page{
-  background-size: cover;
-  background-position: center;
+.sign-in-background {
   background-image: url("./signinbg.png");
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  height: 92vh;
+  overflow: hidden;
 }
 
-.sign-in-text{
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 64px;
-    line-height: 89px;
-    color: #FFFFFF;
-    text-align: justify;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-290%, -320%);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.sign-up,
+.sign-in-text {
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.sign-in-description1{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 44px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-90%, -350%);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.sign-up {
+  font-size: 4.5em;
+  margin-top: 2em;
 }
 
-.sign-in-description2{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 44px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-165.5%, -300%);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.sign-in-text {
+  font-size: 1.125em;
 }
 
-.sign-in-btn{
-    font-family: 'Inter', sans-serif;
-  width: 12.5em;
-  height: 2.5em;
+.form-control,
+.form-select {
+  font-size: medium !important;
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-select:focus,
+.form-select:hover {
+  box-shadow: 0 0 1em #000013;
+}
+
+.submitbtn {
+  margin-left: 3em;
+}
+
+.sign-in-btn {
+  font-family: 'Inter', sans-serif;
   --primary-color: linear-gradient(180deg, #4879F0 0%, #1F28A0 100%);
   --secondary-color: #FFFFFF;
   --hover-color: #111111;
   --arrow-width: 10px;
   --arrow-stroke: 2px;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 20px;
   color: var(--secondary-color);
-  padding: 1em 1.8em;
+  box-sizing: border-box;
   background: var(--primary-color);
   display: flex;
   transition: 0.2s background;
   align-items: center;
   gap: 0.6em;
   font-weight: bold;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-305%, 300%);
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.sign-in-btn .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s background;
+}
+
+.sign-in-btn .arrow::before {
+  content: "";
   position: absolute;
+  box-sizing: border-box;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
 }
 
-
-.sign-in-btn .arrow-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-.sign-in-btn .arrow{
-    margin-top: 1px;
-    width: var(--arrow-width);
-    height: var(--arrow-stroke);
-    position: relative;
-    transition: 0.2s background;
-  }
-
-.sign-in-btn .arrow::before{
-    content: "";
-    position: absolute;
-    box-sizing: border-box;
-    border: solid var(--secondary-color);
-    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-    display: inline-block;
-    top: -3px;
-    right: 3px;
-    transition: 0.2s;
-    padding: 3px;
-    transform: rotate(-45deg);
-  }
-  
-.sign-in-btn:hover{
-    background: var(--hover-color);
-  }
-  
-.sign-in-btn:hover .arrow{
-    background: var(--secondary-color);
-  }
-  
-.sign-in-btn:hover .arrow:before{
-    right: 0;
-  }
-  
-.input-box-fullname{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-317%, -100%);
-  position: absolute;
-
+.sign-in-btn:hover {
+  background: var(--hover-color);
 }
 
-.input-box-email{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-317%, 50%);
-  position: absolute;
+.sign-in-btn:hover .arrow {
+  background: var(--secondary-color);
 }
 
-.input-box-age{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-235%, -100%);
-  position: absolute;
-}
-
-.input-box-sex{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-242%, 46%);
-  position: absolute;
-}
-
-.fullname__input{
-  font-family: 'Inter', sans-serif;
-  font-size: inherit;
-  background-color: #f4f2f2;
-  border: none;
-  color: #646464;
-  padding: 0.7rem 1rem;
-  border-radius: 30px;
-  width: 12em;
-  transition: all ease-in-out .5s;
-  margin-right: -2rem;
-  
-}
-
-.fullname__input:hover, .fullname__input:focus{
-  box-shadow: 0 0 1em #000013;
-}
-
-.fullname__input:focus{
-  outline: none;
-  background-color: #F0EEEE;
-}
-
-.fullname__input::-webkit-input-placeholder{
-  font-weight: 100;
-  color: #cccccc;
-}
-
-.email__input{
-  font-family: 'Inter', sans-serif;
-  font-size: inherit;
-  background-color: #f4f2f2;
-  border: none;
-  color: #646464;
-  padding: 0.7rem 1rem;
-  border-radius: 30px;
-  width: 12em;
-  transition: all ease-in-out .5s;
-  margin-right: -2rem;
-}
-
-.email__input:hover, .email__input:focus{
-  box-shadow: 0 0 1em #000013;
-}
-
-.email__input:focus{
-  outline: none;
-  background-color: #F0EEEE;
-}
-
-.email__input::-webkit-input-placeholder{
-  font-weight: 100;
-  color: #cccccc;
-}
-
-.age__input{
-  font-family: 'Inter', sans-serif;
-  font-size: inherit;
-  background-color: #f4f2f2;
-  border: none;
-  color: #646464;
-  padding: 0.7rem 1rem;
-  border-radius: 30px;
-  width: 7.75em;
-  transition: all ease-in-out .5s;
-  margin-right: -2rem;
-}
-
-.age__input:hover, .age__input:focus{
-  box-shadow: 0 0 1em #000013;
-}
-
-.age__input:focus{
-  outline: none;
-  background-color: #F0EEEE;
-}
-
-.age__input::-webkit-input-placeholder{
-  font-weight: 100;
-  color: #cccccc;
-}
-
-
-.sex__input{
-  font-family: 'Inter', sans-serif;
-  font-size: inherit;
-  background-color: #f4f2f2;
-  border: none;
-  color: #646464;
-  padding: 0.7rem 1rem;
-  border-radius: 30px;
-  width: 9.5em;
-  transition: all ease-in-out .5s;
-  margin-right: -2rem;
-}
-
-.sex__input:hover, .sex__input:focus{
-  box-shadow: 0 0 1em #000013;
-}
-
-.sex__input:focus{
-  outline: none;
-  background-color: #F0EEEE;
-}
-
-.sex__input::-webkit-input-placeholder{
-  font-weight: 100;
-  color: #cccccc;
+.sign-in-btn:hover .arrow:before {
+  right: 0;
 }
