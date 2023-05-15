@@ -19,10 +19,10 @@ function Laboutput(){
             </div>
 
             <div className="tableoutputcontainer">
-                <div class="square">
+                <div class="square-after">
                     <div className="laboutputtext">
-                        <h1 className="laboratorytest">LABORATORY TEST</h1>
-                        <h2 className="completebloodcount">Complete Blood Count</h2>
+                        <h1 className="laboratorytest-after">LABORATORY TEST</h1>
+                        <h2 className="completebloodcount-after">Complete Blood Count</h2>
                         <table className="outouttable">
                         <tr>
                             <td className="cellspacing column1"><BsFillCheckCircleFill className="buttonCheck"/>White Blood Cell Count (WBC)</td>

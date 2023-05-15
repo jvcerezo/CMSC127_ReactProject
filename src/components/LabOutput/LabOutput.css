@@ -51,7 +51,7 @@
     padding:0;
 }
   
-.square {
+.square-after {
     position: relative;
     width: 90%;
     height: 85%;
@@ -63,13 +63,13 @@
     overflow: scroll;
 }
 
-.laboratorytest{
+.laboratorytest-after{
     text-align: center;
     color: black;
     padding-top: 30px;
 }
 
-.completebloodcount{
+.completebloodcount-after{
     text-align: center;
     color: black;
     padding-bottom: 10px;

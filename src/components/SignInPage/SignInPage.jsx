@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './SignInPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
+  const navigate = useNavigate();
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [age, setAge] = useState('');
@@ -74,7 +76,7 @@ const SignIn = () => {
 
           <div className="row justify-content-center mt-5">
             <div className="col-9 col-md-10 col-lg-11">
-              <button type="submit" className="sign-in-btn border border-0 rounded-5 py-3 fs-1">Submit
+              <button type="submit" className="sign-in-btn border border-0 rounded-5 py-3 fs-1" onMouseDown={()=>{navigate('/login'); }}>Submit
                 <div className="arrow-wrapper">
                   <div className="arrow"></div>
                 </div>
