@@ -19,36 +19,42 @@
 }
 
 .infoLabtica {
-  letter-spacing: 0.05em;
-  font-size: 0.9em;
+  letter-spacing: 0.08rem;
+  font-size: 1.6rem;
 }
 
 .arrow-button {
-  font-size: 2.5em;
+  font-size: 4.5rem;
   color: #425BE1;
   cursor: pointer;
 }
 
+.check {
+  font-size: 2.5rem;
+}
 
-.check,
 .about-cbc {
-  font-size: 1.25em;
+  font-size: 2rem;
+}
+
+.socials-info {
+  font-size: 1.125em;
 }
 
 .info,
 .cbc-texts,
 .footer2-1-info,
 .socials-info {
-  font-size: 1.125em;
+  font-size: 1.8rem;
 }
 
 .footer-margin {
-  margin-top: 3.5em;
-  margin-bottom: -4em;
+  margin-top: 5.5rem;
+  margin-bottom: -6.5rem;
 }
 
 .footer-bottom {
-  margin-top: -5em;
+  margin-top: -8rem;
 }
 
 .footer-heading,
@@ -74,39 +80,39 @@
 
 .info {
   color: #FFF8F8;
-  margin-top: 7em;
+  margin-top: 12.5rem;
 }
 
 .title {
   font-family: Kaisei Decol;
   font-style: bold;
-  font-size: 2.25em;
-  letter-spacing: 0.02em;
+  font-size: 4.2rem;
+  letter-spacing: 0.08rem;
   color: #FFFFFF;
 }
 
 .start-button {
-  width: 9.5em;
-  height: 3em;
-  border-radius: 5em;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 10rem;
   background-color: #425BE1;
   align-items: center;
 }
 
 .start-text {
-  font-size: 1em;
+  font-size: 1.6rem;
   margin: auto;
   color: #FFF8F8;
 }
 
 .footer {
-  height: 7.1875em;
-  border-radius: 5.125em;
+  height: 11.5rem;
+  border-radius: 10rem;
   background-color: #E7F1FC;
 }
 
 .cbc-texts {
-  line-height: 1.2em;
+  line-height: 2.3rem;
   text-align: justify;
 }
 
@@ -126,10 +132,9 @@
   transition: transform 0.2s ease-in-out;
 }
 
-
 .about-cbc {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 4rem;
 }
 
 .new-element {
@@ -147,11 +152,11 @@
   text-align: center;
   height: auto;
   overflow: hidden;
-  padding-bottom: 3em;
+  padding-bottom: 5rem;
 }
 
 .footer-firstelem {
-  margin-top: 9em;
+  margin-top: 14.5rem;
 }
 
 .technological {
@@ -160,28 +165,28 @@
 }
 
 .message-container {
-  width: 25em;
-  height: 4.375em;
+  width: 40rem;
+  height: 7rem;
   border-radius: 9px;
   background-color: #FFFFFF;
 }
 
 .message-input {
-  width: 13em;
-  height: 1.875em;
+  width: 20rem;
+  height: 3rem;
   border: none;
-  font-size: 1em;
-  padding: 0.625em;
+  font-size: 1.6rem;
+  padding: 1rem;
 }
 
 .send-button {
-  width: 9em;
-  height: 3.5em;
+  width: 14.5rem;
+  height: 5.5rem;
   border: none;
   border-radius: 9px;
   background-color: #171313;
   color: #FFFFFF;
-  font-size: 1em;
+  font-size: 1.6rem;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -201,12 +206,12 @@
 }
 
 .footer2-1-info p {
-  margin-bottom: 1.5em;
+  margin-bottom: 2.7rem;
 }
 
 .contact-us {
   font-style: bold;
-  font-size: 1.5em;
+  font-size: 2.4rem;
   letter-spacing: 1.5%;
   color: #0E0606;
   text-align: left;
@@ -214,22 +219,22 @@
 
 .contact-info {
   text-align: left;
-  font-size: 1.1em;
+  font-size: 1.75rem;
   color: #4F4747;
 }
 
 .contact-info p {
-  margin-bottom: 0em;
+  margin-bottom: 0rem;
 }
 
 .contact-info-lastline {
-  margin-top: 2em;
+  margin-top: 3.5rem;
   text-align: justify;
 }
 
 .language {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2.4rem;
   color: #0E0606;
 }
 
@@ -238,11 +243,11 @@
 }
 
 .language-dropdown {
-  width: 7em;
-  height: 3em;
+  width: 11.2rem;
+  height: 5rem;
   border: 0;
   border-radius: 8px;
-  font-size: 2.5em;
+  font-size: 4rem;
   background-color: rgb(207, 223, 236);
 }
 
@@ -252,26 +257,26 @@
 
 .socials {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2.4rem;
 }
 
 .social-logos {
-  font-size: 1.5625em;
+  font-size: 2.8rem;
 }
 
 .footer3-info {
-  font-size: 1em;
-  letter-spacing: 0.05em;
+  font-size: 1.6rem;
+  letter-spacing: 0.08rem;
 }
 
 
 @media (max-width: 767.98px) {
   .footer-heading {
-    font-size: 0.8em;
+    font-size: 1.3rem;
   }
 
   .socialtext {
-    font-size: 0.8em;
+    font-size: 1.3rem;
   }
 
 }
@@ -279,7 +284,7 @@
 @media (max-width: 991.98px) {
 
   .technological {
-    font-size: 3em;
+    font-size: 4.8rem;
   }
 
   .image-container {
@@ -292,18 +297,18 @@
   }
 
   .cbc-texts {
-    font-size: 1em;
+    font-size: 1.6rem;
   }
 }
 
 @media (min-width: 768px) {
   .footer-heading {
-    font-size: 1em;
+    font-size: 1.6rem;
   }
 }
 
 @media (min-width: 992px) {
   .footer-heading {
-    font-size: 1.25em;
+    font-size: 2rem;
   }
 }
