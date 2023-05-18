@@ -18,15 +18,20 @@
   background-image: url("./12.png");
 }
 
-.infoLabtica {
+.infoLabtica,
+.title,
+.footer3-info {
   letter-spacing: 0.08rem;
-  font-size: 1.6rem;
+}
+
+.arrow-button,
+.language-dropdown:hover {
+  cursor: pointer;
 }
 
 .arrow-button {
   font-size: 4.5rem;
   color: #425BE1;
-  cursor: pointer;
 }
 
 .check {
@@ -46,6 +51,20 @@
 .footer2-1-info,
 .socials-info {
   font-size: 1.8rem;
+}
+
+.start-text,
+.infoLabtica,
+.message-input,
+.send-button,
+.footer3-info {
+  font-size: 1.6rem;
+}
+
+.contact-us,
+.language,
+.socials {
+  font-size: 2.4rem;
 }
 
 .footer-margin {
@@ -74,6 +93,31 @@
   font-family: Inter;
 }
 
+
+.title,
+.contact-us,
+.language,
+.socials {
+  font-weight: bold;
+}
+
+.contact-us,
+.contact-info,
+.technological {
+  text-align: left;
+}
+
+.cbc-texts,
+.footer2-1-info,
+.contact-info-lastline {
+  text-align: justify;
+}
+
+.about-cbc,
+.footer2 {
+  text-align: center;
+}
+
 .check {
   color: #5E5E61;
 }
@@ -85,35 +129,34 @@
 
 .title {
   font-family: Kaisei Decol;
-  font-style: bold;
-  font-size: 4.2rem;
-  letter-spacing: 0.08rem;
+  font-size: 4rem;
   color: #FFFFFF;
+}
+
+.start-button,
+.footer {
+  border-radius: 10rem;
 }
 
 .start-button {
   width: 15rem;
   height: 5rem;
-  border-radius: 10rem;
   background-color: #425BE1;
   align-items: center;
 }
 
 .start-text {
-  font-size: 1.6rem;
   margin: auto;
   color: #FFF8F8;
 }
 
 .footer {
   height: 11.5rem;
-  border-radius: 10rem;
   background-color: #E7F1FC;
 }
 
 .cbc-texts {
   line-height: 2.3rem;
-  text-align: justify;
 }
 
 .image-container img {
@@ -133,23 +176,24 @@
 }
 
 .about-cbc {
-  text-align: center;
   margin-bottom: 4rem;
 }
 
-.new-element {
+.new-element,
+.new-element2 {
   border-radius: 25px;
+}
+
+.new-element {
   background-color: rgba(22, 19, 137, 0.15);
 }
 
 .new-element2 {
-  border-radius: 25px;
   background-color: rgba(158, 9, 76, 0.15);
 }
 
 .footer2 {
   background-color: #E7F1FC;
-  text-align: center;
   height: auto;
   overflow: hidden;
   padding-bottom: 5rem;
@@ -161,13 +205,16 @@
 
 .technological {
   font-weight: 600;
-  text-align: left;
+}
+
+.message-container,
+.send-button {
+  border-radius: 9px;
 }
 
 .message-container {
   width: 40rem;
   height: 7rem;
-  border-radius: 9px;
   background-color: #FFFFFF;
 }
 
@@ -175,7 +222,6 @@
   width: 20rem;
   height: 3rem;
   border: none;
-  font-size: 1.6rem;
   padding: 1rem;
 }
 
@@ -183,10 +229,8 @@
   width: 14.5rem;
   height: 5.5rem;
   border: none;
-  border-radius: 9px;
   background-color: #171313;
   color: #FFFFFF;
-  font-size: 1.6rem;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -201,24 +245,23 @@
 
 .footer2-1-info {
   color: #4F4747;
-  text-align: justify;
-
 }
 
 .footer2-1-info p {
   margin-bottom: 2.7rem;
 }
 
-.contact-us {
-  font-style: bold;
-  font-size: 2.4rem;
-  letter-spacing: 1.5%;
+.contact-us,
+.language {
   color: #0E0606;
-  text-align: left;
 }
 
+.contact-us {
+  letter-spacing: 1.5%;
+}
+
+
 .contact-info {
-  text-align: left;
   font-size: 1.75rem;
   color: #4F4747;
 }
@@ -229,13 +272,6 @@
 
 .contact-info-lastline {
   margin-top: 3.5rem;
-  text-align: justify;
-}
-
-.language {
-  font-weight: bold;
-  font-size: 2.4rem;
-  color: #0E0606;
 }
 
 .invisible {
@@ -251,34 +287,16 @@
   background-color: rgb(207, 223, 236);
 }
 
-.language-dropdown:hover {
-  cursor: pointer;
-}
-
-.socials {
-  font-weight: bold;
-  font-size: 2.4rem;
-}
-
 .social-logos {
   font-size: 2.8rem;
 }
 
-.footer3-info {
-  font-size: 1.6rem;
-  letter-spacing: 0.08rem;
-}
-
-
 @media (max-width: 767.98px) {
-  .footer-heading {
-    font-size: 1.3rem;
-  }
 
+  .footer-heading,
   .socialtext {
     font-size: 1.3rem;
   }
-
 }
 
 @media (max-width: 991.98px) {
@@ -287,13 +305,13 @@
     font-size: 4.8rem;
   }
 
-  .image-container {
-    width: 60%;
+  .image-container,
+  .center-images {
     justify-content: center;
   }
 
-  .center-images {
-    justify-content: center;
+  .image-container {
+    width: 60%;
   }
 
   .cbc-texts {
